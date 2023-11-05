@@ -1,7 +1,3 @@
-import React from "react";
-
 export function Star() {
-    return (
-        <span>Star </span>
-    )
+	return <span>Star </span>
 }
