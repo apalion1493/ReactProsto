@@ -1,14 +1,17 @@
-import {Star} from "./Star";
-import React from "react";
+import { Star } from './Star'
 
-export function Rating() {
-    return (
-        <div>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </div>
-    )
+type RatingProps = {
+	value: 0 | 1 | 2 | 3 | 4 | 5
+}
+
+export function Rating(props: RatingProps) {
+	return (
+		<div>
+			<Star selected={true} />
+			<Star selected={true} />
+			<Star selected={false} />
+			<Star selected={false} />
+			<Star selected={false} />
+		</div>
+	)
 }
